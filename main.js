@@ -88,7 +88,7 @@ function getTimeRemaining(endtime) {
   //   window.location.href = "https://furtrain.club/thank-you";
   // }, 3000));
 
-  Snipcart.subscribe('bind', 'order.completed', function() {
+  Snipcart.subscribe('order.completed', function() {
     window.location.href = "https://furtrain.club/thank-you";
   });
 
