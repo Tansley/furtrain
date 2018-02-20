@@ -173,3 +173,9 @@ div[data-for="company"] {
         display: none;
     }
 }
+
+@media only screen and (-webkit-max-device-pixel-ratio: 1026px) {
+    #fadeshow1 {
+        display: none;
+    }
+}
