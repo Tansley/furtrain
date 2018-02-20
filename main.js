@@ -86,3 +86,7 @@ function getTimeRemaining(endtime) {
   // Snipcart.execute('bind', 'order.completed', setTimeout(function (order) {
   //   window.location.href = "https://www.google.com";
   // }, 3000));
+
+  document.querySelector('js-submit').addEventListener('order.completed', setTimeout(function() {
+    window.location.href = "https://furtrain.club/thank-you";
+  }, 3000));
