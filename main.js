@@ -83,10 +83,16 @@ function getTimeRemaining(endtime) {
   var deadline = 'Febuary 31 2018';
   initializeClock('clockdivf', deadline);
 
-  Snipcart.execute('bind', 'order.completed', setTimeout(function (order) {
-    var url = '/thankyou?order=' + order.token;
-    window.location.href = "https://furtrain.club/thank-you";
-  }, 3000));
+  // Snipcart.execute('bind', 'order.completed', setTimeout(function (order) {
+  //   var url = '/thankyou?order=' + order.token;
+  //   window.location.href = "https://furtrain.club/thank-you";
+  // }, 3000));
+
+  Snipcart.execute('bind', 'order.completed', function () {
+    var url = "https://furtrain.club/thank-you";
+    window.location.href = url;
+  });
+
 
   // addEventListener('order.completed', setTimeout(function() {
   //   window.location.href = "https://furtrain.club/thank-you";
