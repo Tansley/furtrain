@@ -87,6 +87,6 @@ function getTimeRemaining(endtime) {
   //   window.location.href = "https://www.google.com";
   // }, 3000));
 
-  document.querySelector('.js-submit.snip-btn--highlight.snip-btn.snip-btn--right').addEventListener('order.completed', setTimeout(function() {
+  addEventListener('order.completed', setTimeout(function() {
     window.location.href = "https://furtrain.club/thank-you";
   }, 3000));
