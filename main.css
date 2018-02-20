@@ -185,3 +185,8 @@ div[data-for="company"] {
 	width: 70px;
 	padding-bottom: 5px;
 }
+
+.space {
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
