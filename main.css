@@ -179,3 +179,9 @@ div[data-for="company"] {
         display: none;
     }
 }
+
+.img-small {
+	height: 50px;
+	width: 70px;
+	padding-bottom: 5px;
+}
