@@ -84,7 +84,7 @@ function getTimeRemaining(endtime) {
   initializeClock('clockdivf', deadline);
 
   Snipcart.execute('bind', 'order.completed', setTimeout(function () {
-    window.location.href = "https://furtrain.club/thank-you";
+    window.location = "https://furtrain.club/thank-you";
   }, 3000));
 
   // addEventListener('order.completed', setTimeout(function() {
