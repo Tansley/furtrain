@@ -88,10 +88,9 @@ function getTimeRemaining(endtime) {
   //   window.location.href = "https://furtrain.club/thank-you";
   // }, 3000));
 
-  Snipcart.execute('bind', 'order.completed', function () {
-    var url = "https://furtrain.club/thank-you";
-    window.location.href = url;
-  });
+  Snipcart.execute('bind', 'order.completed', setTimeout(function() {
+    window.location.href = "https://furtrain.club/thank-you";
+  }, 3000));
 
 
   // addEventListener('order.completed', setTimeout(function() {
